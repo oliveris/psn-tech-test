@@ -1,4 +1,4 @@
-import controllers from '../video/video.controller'
+import controllers from './video.controller'
 import { isFunction } from 'lodash'
 
 describe('video controller', () => {
