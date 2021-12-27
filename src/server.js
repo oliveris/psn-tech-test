@@ -5,7 +5,7 @@ import config from './config'
 import cors from 'cors'
 import { connect } from './utils/db'
 // Import the video router
-import videoRouter from './resources/video/video.router'
+import videoRouter from './resources/routes/video/video.router'
 
 export const app = express()
 

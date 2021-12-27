@@ -1,13 +1,11 @@
-import router from '../item.router'
+import router from './video.router'
 
-describe('item router', () => {
-  test('has crud routes', () => {
+describe('video router', () => {
+  test('has create, read and delete routes', () => {
     const routes = [
       { path: '/', method: 'get' },
-      { path: '/:id', method: 'get' },
-      { path: '/:id', method: 'delete' },
-      { path: '/:id', method: 'put' },
-      { path: '/', method: 'post' }
+      { path: '/', method: 'post' },
+      { path: '/:id', method: 'delete' }
     ]
 
     routes.forEach(route => {
