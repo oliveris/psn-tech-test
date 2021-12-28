@@ -8,7 +8,7 @@ const videoSchema = new mongoose.Schema(
       trim: true,
       maxlength: 100
     },
-    publishedAt: {
+    date: {
       type: Date,
       default: null
     },

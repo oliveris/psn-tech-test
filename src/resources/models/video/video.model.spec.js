@@ -13,9 +13,9 @@ describe('Video model', () => {
       })
     })
 
-    test('publishedAt', () => {
-      const publishedAt = Video.schema.obj.publishedAt
-      expect(publishedAt).toEqual({
+    test('date', () => {
+      const date = Video.schema.obj.date
+      expect(date).toEqual({
         type: Date,
         default: null
       })
