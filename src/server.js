@@ -6,6 +6,8 @@ import cors from 'cors'
 import { connect } from './utils/db'
 // Import the video router
 import videoRouter from './resources/routes/video/video.router'
+// Import the filter video router (for endpoint in task 4 - additional endpoint for specific functionality)
+import filterVideoRouter from './resources/routes/filter-video/filter-video.router'
 
 export const app = express()
 
@@ -17,6 +19,7 @@ app.use(urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
 app.use('/api/videos', videoRouter)
+app.use('/api/filter-videos', filterVideoRouter)
 
 export const start = async () => {
   try {

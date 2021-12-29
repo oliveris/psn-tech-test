@@ -7,9 +7,12 @@ const router = Router()
 router
   .route('/')
   .get(controller.getMany)
-  .post(controller.createOne)
+  .post(controller.createMany)
 
-// /api/videos/:id
-router.route('/:id').delete(controller.removeOne)
+// /api/videos/:video
+router
+  .route('/:video')
+  .get(controller.getOne)
+  .delete(controller.removeOne)
 
 export default router

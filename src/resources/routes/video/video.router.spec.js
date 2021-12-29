@@ -5,7 +5,8 @@ describe('video router', () => {
     const routes = [
       { path: '/', method: 'get' },
       { path: '/', method: 'post' },
-      { path: '/:id', method: 'delete' }
+      { path: '/:video', method: 'get' },
+      { path: '/:video', method: 'delete' }
     ]
 
     routes.forEach(route => {
