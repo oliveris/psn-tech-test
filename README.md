@@ -7,20 +7,20 @@ A RESTful API to perform create, read, deletion and search functionality.
 
 1. Open a new terminal and cd into the project then start mongo db by running `mongo`
 2. Open another terminal and cd into the project then run the following:
-    a. `yarn insall`
-    b. `yarn build`
-    c. `yarn start`
+    1. `yarn insall`
+    2. `yarn build`
+    3. `yarn start`
 
 ### Running the code
 
 For the perpose of this tech test I have used Postman client to send the REST API requests.
 I have provided the export file `psn-tech-test.postman_collection.json` so you can easily import the collection to run the code.
 In the collection you will find 5 endpoints:
-1. Task 1a: Creates Videos
-2. Task 1b: Gets a list of all videos
-3. Task 2: Gets a video
-4. Task 3: Deletes a Video
-5. Task 4: Gets a filtered list of videos
+1. `Task 1a: Creates Videos`
+2. `Task 1b: Gets a list of all videos`
+3. `Task 2: Gets a video`
+4. `Task 3: Deletes a Video`
+5. `Task 4: Gets a filtered list of videos`
 
 ### Running tests
 
@@ -34,8 +34,8 @@ In the collection you will find 5 endpoints:
 1. SQL file provided sets `title`, `date` and `channel_name` to nullable fields which seems odd when YouTube have these as mandatory fields
 2. The SQL file also doesnt show the relationship one to many between `channel` and `video`
 3. Naming on the columns could be improved:
-    a. Naming a column `date` is not great practice as it is not difining anything about the data you are entering, would be better setting it to `published_at`
-    b. Naming the column `channel_name` inside the `channels` table, could just call it `name` as we know we are already inside the `channels` table 
+    1. Naming a column `date` is not great practice as it is not difining anything about the data you are entering, would be better setting it to `published_at`
+    2. Naming the column `channel_name` inside the `channels` table, could just call it `name` as we know we are already inside the `channels` table 
 4. Couldn't find a better way to batch these YouTube API calls to minimise the amount of requests being sent
 
 ### Improvments
