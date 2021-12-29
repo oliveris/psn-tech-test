@@ -1,4 +1,4 @@
-import router from './video.router'
+import router from './filter-video.router'
 
 describe('filter video router', () => {
   test('has read routes', () => {

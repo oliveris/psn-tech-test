@@ -1,7 +1,7 @@
 # PSN Tech Test 
 ## API design in Node.js with Express, v3
 
-A RESTful API to perform storage, deletion and search functionality.
+A RESTful API to perform create, read, deletion and search functionality.
 
 ### Project Setup
 
@@ -15,11 +15,12 @@ A RESTful API to perform storage, deletion and search functionality.
 
 For the perpose of this tech test I have used Postman client to send the REST API requests.
 I have provided the export file `psn-tech-test.postman_collection.json` so you can easily import the collection to run the code.
-In the collection you will find 3 endpoints:
-1. Gets a list of all videos
-2. Creates Videos
-3. Gets a single video
-4. Deletes a Video
+In the collection you will find 5 endpoints:
+1. Task 1a: Creates Videos
+2. Task 1b: Gets a list of all videos
+3. Task 2: Gets a video
+4. Task 3: Deletes a Video
+5. Task 4: Gets a filtered list of videos
 
 ### Running tests
 
