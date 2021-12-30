@@ -61,7 +61,7 @@ const createMany = async (req, res, next) => {
     const foundVideos = await youtube.getVideosForChannel(channel, filter)
 
     // Push found items into videos array
-    videos.push(foundVideos)
+    videos.push(...foundVideos)
   }
 
   try {
