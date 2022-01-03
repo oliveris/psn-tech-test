@@ -5,22 +5,23 @@ A RESTful API to perform create, read, deletion and search functionality.
 
 ### Project Setup
 
-1. Open a new terminal and cd into the project then start mongo db by running `mongo`
-2. Open another terminal and cd into the project then run the following:
-    1. `yarn insall`
+1. Install Node and Mongo onto your machine if not already 
+2. Open a new terminal and cd into the project then start mongo db by running `mongo`
+3. Open another terminal and cd into the project then run the following:
+    1. `yarn install`
     2. `yarn build`
     3. `yarn start`
 
 ### Running the code
 
-For the perpose of this tech test I have used Postman client to send the REST API requests.
+For the purpose of this tech test I have used Postman client to send the REST API requests.
 I have provided the export file `psn-tech-test.postman_collection.json` so you can easily import the collection to run the code.
 In the collection you will find 5 endpoints:
 1. `Task 1a: Creates Videos`
 2. `Task 1b: Gets a list of all videos`
-3. `Task 2: Gets a video`
-4. `Task 3: Deletes a Video`
-5. `Task 4: Gets a filtered list of videos`
+3. `Task 2: Gets a video` (Set the {video} path param as an _id value obtained in the previous list query)
+4. `Task 3: Deletes a Video` (Set the {video} path param as the same value used in the above query) - 204 No Content is returned for successful deletion
+5. `Task 4: Gets a filtered list of videos` (Filtering is done by the title query param which looks for an exact match on video title)
 
 ### Running tests
 

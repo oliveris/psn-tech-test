@@ -176,7 +176,7 @@
 					"variable": [
 						{
 							"key": "video",
-							"value": "61cc75825198e6fdce956d92",
+							"value": "61ce40da4ca130054d9a3825",
 							"description": "ID of the video"
 						}
 					]
@@ -186,7 +186,7 @@
 				{
 					"name": "200 OK",
 					"originalRequest": {
-						"method": "DELETE",
+						"method": "GET",
 						"header": [],
 						"url": {
 							"raw": "{{baseURL1}}/api/videos/:video",
@@ -263,7 +263,7 @@
 					"variable": [
 						{
 							"key": "video",
-							"value": "61cc96712bb6df02b761d19e",
+							"value": "61ce40da4ca130054d9a3825",
 							"description": "ID of the video"
 						}
 					]
@@ -338,7 +338,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL1}}/api/filter-videos?title=Test Title",
+					"raw": "{{baseURL1}}/api/filter-videos?title=Proflex 957 1997 Retro Mountain Bike | Pro Bike",
 					"host": [
 						"{{baseURL1}}"
 					],
@@ -349,7 +349,7 @@
 					"query": [
 						{
 							"key": "title",
-							"value": "Test Title"
+							"value": "Proflex 957 1997 Retro Mountain Bike | Pro Bike"
 						}
 					]
 				}
@@ -361,13 +361,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{baseURL1}}/api/videos",
+							"raw": "{{baseURL1}}/api/videos?title=Test Title",
 							"host": [
 								"{{baseURL1}}"
 							],
 							"path": [
 								"api",
 								"videos"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Test Title"
+								}
 							]
 						}
 					},
